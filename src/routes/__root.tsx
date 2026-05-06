@@ -76,11 +76,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Premium villa plots in Mavallipura, North Bengaluru. 28.45 acres, 100+ amenities, 35,000 sqft clubhouse. BDA approved. Pre-launch from ₹6,500/sqft." },
       { name: "keywords", content: "plots in North Bengaluru, villa plots near Yelahanka, premium plotted development Bengaluru, Mavallipura plots, BDA approved plots, plots near BIAL airport" },
       { name: "author", content: "Land & Life Space Pvt Ltd" },
-      { property: "og:title", content: "Mavallipura — A Defined Lifestyle in North Bengaluru" },
-      { property: "og:description", content: "28 acres. 100+ amenities. One address that only gets better. By Land & Life Space." },
+      { property: "og:title", content: "Mavallipura — Premium Plotted Development in North Bengaluru | Land & Life Space" },
+      { property: "og:description", content: "Premium villa plots in Mavallipura, North Bengaluru. 28.45 acres, 100+ amenities, 35,000 sqft clubhouse. BDA approved. Pre-launch from ₹6,500/sqft." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@LandLifeSpace" },
+      { name: "twitter:title", content: "Mavallipura — Premium Plotted Development in North Bengaluru | Land & Life Space" },
+      { name: "twitter:description", content: "Premium villa plots in Mavallipura, North Bengaluru. 28.45 acres, 100+ amenities, 35,000 sqft clubhouse. BDA approved. Pre-launch from ₹6,500/sqft." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/f1fe8901-0b1e-4d1a-9e22-c4a5646b4957/id-preview-cb11905f--c6671b75-1d4a-4a49-a115-3b715f3e694e.lovable.app-1778095633250.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/f1fe8901-0b1e-4d1a-9e22-c4a5646b4957/id-preview-cb11905f--c6671b75-1d4a-4a49-a115-3b715f3e694e.lovable.app-1778095633250.png" },
     ],
     links: [
       {
