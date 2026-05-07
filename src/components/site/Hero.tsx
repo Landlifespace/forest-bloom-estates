@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import heroForest from "@/assets/hero-forest.jpg";
-import bougainSprig from "@/assets/bougain-sprig.png";
 import { Petals } from "./Petals";
 
 const stats = [
@@ -28,25 +27,6 @@ export function Hero() {
 
       <Petals count={18} />
 
-      <motion.img
-        src={bougainSprig}
-        alt=""
-        aria-hidden
-        initial={{ opacity: 0, rotate: -10, x: -40 }}
-        animate={{ opacity: 0.85, rotate: 0, x: 0 }}
-        transition={{ duration: 1.6, delay: 0.3 }}
-        className="pointer-events-none absolute -left-10 top-24 hidden w-72 rotate-[-15deg] animate-float-slow md:block"
-      />
-      <motion.img
-        src={bougainSprig}
-        alt=""
-        aria-hidden
-        initial={{ opacity: 0, rotate: 200, x: 40 }}
-        animate={{ opacity: 0.7, rotate: 190, x: 0 }}
-        transition={{ duration: 1.6, delay: 0.5 }}
-        className="pointer-events-none absolute -right-12 bottom-32 hidden w-80 animate-float-slow md:block"
-        style={{ animationDelay: "-3s" }}
-      />
 
       <div className="relative z-10 mx-auto flex min-h-[100svh] max-w-[1400px] flex-col items-center justify-center px-6 pt-32 pb-20 text-center lg:px-10">
         <motion.div

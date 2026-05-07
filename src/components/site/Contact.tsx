@@ -3,8 +3,6 @@ import { motion } from "framer-motion";
 import { z } from "zod";
 import { SectionTitle } from "./SectionTitle";
 import { Petals } from "./Petals";
-import bougainSprig from "@/assets/bougain-sprig.png";
-
 const schema = z.object({
   name: z.string().trim().min(2, "Please enter your full name").max(80),
   phone: z.string().trim().min(7, "Please enter a valid phone").max(20),
@@ -41,12 +39,7 @@ export function Contact() {
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-emerald-black via-forest-deep/40 to-emerald-black" />
       <Petals count={10} />
 
-      <img
-        src={bougainSprig}
-        alt=""
-        aria-hidden
-        className="pointer-events-none absolute -right-12 top-12 hidden w-72 opacity-60 animate-float-slow lg:block"
-      />
+  
 
       <div className="relative mx-auto max-w-[1400px] px-6 lg:px-10">
         <SectionTitle
