@@ -97,7 +97,7 @@ export function Pricing() {
               <li>— Registered title to your plot</li>
               <li>— Fully developed roads, lit boulevards</li>
               <li>— Underground utilities, drainage</li>
-              <li>— Perimeter wall &amp; gated security</li>
+              <li>— Perimeter wall &amp;  security</li>
               <li>— BDA-approved layout, clear title</li>
             </ul>
           </div>

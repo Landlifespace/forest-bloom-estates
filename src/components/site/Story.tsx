@@ -5,8 +5,8 @@ import natureImg from "@/assets/nature.jpg";
 const principles = [
   {
     n: "01",
-    t: "Nature as architecture",
-    d: "20%+ of the site is preserved as living green space. We plan the boulevard around the trees, not the other way around.",
+    t: "Biophilia as architecture",
+    d: "4.5 Acre of the site is preserved as living green space. We plan the boulevard around the trees, not the other way around.",
   },
   {
     n: "02",
@@ -16,7 +16,7 @@ const principles = [
   {
     n: "03",
     t: "Built without compromise",
-    d: "Underground utilities, full-width boulevards, and a 35,000 sqft clubhouse — the infrastructure of a forever home.",
+    d: "Underground utilities, full-width boulevards, and a 25,000 sqft clubhouse — the infrastructure of a forever home.",
   },
 ];
 
@@ -34,7 +34,7 @@ export function Story() {
                   <span className="italic text-gradient-bloom">North Bengaluru&rsquo;s</span> growth story.
                 </>
               }
-              intro="Mavallipura is a 28.45-acre gated estate of premium villa plots — designed as a sanctuary, not a subdivision. A flagship clubhouse, layered green corridors, and a hundred quiet luxuries gathered behind one address."
+              intro="Mavallipura is a 29-acre  estate of premium villa plots — designed as a sanctuary, not a subdivision. A flagship clubhouse, layered green corridors, and a hundred quiet luxuries gathered behind one address."
             />
 
             <div className="mt-14 space-y-px overflow-hidden rounded-2xl glass">

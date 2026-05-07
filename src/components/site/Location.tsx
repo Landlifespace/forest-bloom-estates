@@ -32,7 +32,7 @@ export function Location() {
               <span className="italic text-gradient-gold">Before everyone else gets here.</span>
             </>
           }
-          intro="The same corridor that saw Devanahalli rise 189% over five years is now extending to Mavallipura. The 90-metre PRR Road will permanently change your commute — and your address. Buy at today's prices in tomorrow's neighbourhood."
+          intro="The 90-metre PRR Road will permanently change your commute — and your address. Buy at today's prices in tomorrow's neighbourhood."
         />
 
         <div className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

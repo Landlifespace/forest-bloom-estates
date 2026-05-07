@@ -9,11 +9,11 @@ const faqs = [
   },
   {
     q: "What is the current legal status of the land?",
-    a: "Agricultural status with CLU permissible under BDA jurisdiction. Title opinion is 90% complete by JSA Law Firm — one of India's leading real estate legal firms. All 13 survey numbers are under MOU, totalling 29 acres 0.25 guntas.",
+    a: "Agricultural status with CLU permissible under BDA jurisdiction. Title opinion is 90% complete by Gobally Recognised Law Firm — one of India's leading real estate legal firms. All 13 survey numbers are under MOU, totalling 29 acres 0.25 guntas.",
   },
   {
     q: "When will I get possession of my plot?",
-    a: "Possession is expected 24 months from RERA registration date. Realistic RERA registration: August 2026. Expected possession: mid-2028. This is a commitment, not an estimate.",
+    a: "Possession is expected 24 months from RERA registration date. Realistic RERA registration: Octust 2026. Expected possession: mid-2028. This is a commitment, not an estimate.",
   },
   {
     q: "What sizes are the plots and what is the price?",
@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     q: "Is this for self-use or investment?",
-    a: "Both. Build your dream home at your own pace inside a premium gated community with 100+ amenities. North Bengaluru has delivered 35%+ five-year appreciation; Devanahalli showed 189% over five years.",
+    a: "Both. Build your dream home at your own pace inside a premium  community with 100* amenities. North Bengaluru has delivered 35%+ five-year appreciation; Devanahalli showed 189% over five years.",
   },
 ];
 

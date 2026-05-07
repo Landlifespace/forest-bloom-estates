@@ -126,8 +126,8 @@ export function Contact() {
                 Land &amp; Life Space Pvt Ltd
               </div>
               <div className="mt-2 text-sm text-mist/70">
-                Mavallipura · Hesarghatta Hobli<br />
-                Yelahanka Taluk, North Bengaluru
+                Mavallipura · <br />
+                Yelahanka. North Bengaluru
               </div>
               <div className="mt-6 grid grid-cols-2 gap-3">
                 <a
@@ -146,7 +146,7 @@ export function Contact() {
                 </a>
               </div>
               <div className="mt-5 space-y-2 text-sm text-mist/70">
-                <div>📞 +91 99999 99999</div>
+                <div>📞 +91 95918 04455</div>
                 <div>✉ sales@landlifespace.in</div>
                 <div>🌐 www.landlifespace.in</div>
               </div>

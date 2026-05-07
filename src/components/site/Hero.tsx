@@ -4,10 +4,10 @@ import bougainSprig from "@/assets/bougain-sprig.png";
 import { Petals } from "./Petals";
 
 const stats = [
-  { v: "28.45", l: "Acres" },
-  { v: "100+", l: "Amenities" },
-  { v: "35,000", l: "sqft Clubhouse" },
-  { v: "Aug ’26", l: "Launch" },
+  { v: "29", l: "Acres" },
+  { v: "100*", l: "Amenities" },
+  { v: "25,000", l: "sqft Clubhouse" },
+  { v: "Oct ’26", l: "Launch" },
 ];
 
 export function Hero() {
@@ -75,7 +75,7 @@ export function Hero() {
           transition={{ duration: 1, delay: 0.7 }}
           className="mt-8 max-w-2xl text-base leading-relaxed text-mist/70 md:text-lg"
         >
-          A limited collection of premium villa plots in a nature-first gated community —
+          A limited collection of premium villa plots in a nature-first  community —
           designed for the family that wants a home built on their terms, in Bengaluru&rsquo;s
           fastest-growing corridor.
         </motion.p>

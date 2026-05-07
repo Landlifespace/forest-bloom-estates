@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import bougainvillea from "@/assets/bougainvillea.jpg";
 
 const promises = [
-  { v: "20%+", l: "Open green / canopy area" },
+  { v: "4.5 Acre", l: "Open green / canopy area" },
   { v: "1,000+", l: "Native trees planted" },
   { v: "100%", l: "Wastewater recycled on-site" },
-  { v: "0", l: "Compromises on the forest" },
+  { v: "<40", l: "AQI Index" },
 ];
 
 export function Nature() {

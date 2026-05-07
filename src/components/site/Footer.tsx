@@ -49,12 +49,12 @@ export function Footer() {
             </div>
             <p className="mt-6 max-w-md text-sm leading-relaxed text-mist/60">
               A signature plotted community at the heart of North Bengaluru&rsquo;s growth
-              corridor. 28 acres. 100+ amenities. One address that only gets better.
+              corridor. 28 acres. 100* amenities. One address that only gets better.
             </p>
 
             <div className="mt-8 space-y-2 text-sm text-mist/70">
-              <div>Mavallipura, Hesarghatta Hobli, Yelahanka, Bengaluru</div>
-              <div>+91 99999 99999 · sales@landlifespace.in</div>
+              <div>Mavallipura, , Yelahanka. Bengaluru</div>
+              <div>+91 95918 04455 · sales@landlifespace.in</div>
               <div>www.landlifespace.in</div>
             </div>
 

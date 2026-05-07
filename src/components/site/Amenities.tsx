@@ -3,12 +3,12 @@ import { SectionTitle } from "./SectionTitle";
 import clubhouse from "@/assets/clubhouse.jpg";
 
 const featured = [
-  { t: "35,000 sqft Flagship Clubhouse", d: "The civic heart of the community." },
-  { t: "Olympic-Standard Pool", d: "Plus a dedicated kids pool, set in tropical landscaping." },
+  { t: "25,000 sqft Flagship Clubhouse", d: "The civic heart of the community." },
+  { t: "Swimming Pool", d: "Plus a dedicated kids pool, set in tropical landscaping." },
   { t: "Ayurveda Wellness Spa", d: "A retreat for residents with Ayurveda, Unani, Chinese medicine." },
   { t: "24/7 Medical Clinic", d: "An OPD on-site, because care should never wait." },
   { t: "Pre-school & Daycare", d: "Inside the gates — your morning runs short." },
-  { t: "1,000+ Trees, 20%+ Greens", d: "Living infrastructure, planned before the roads." },
+  { t: "1,000+ Trees, 4.5 Acre Greens", d: "Living infrastructure, planned before the roads." },
 ];
 
 const groups = [
@@ -28,14 +28,14 @@ export function Amenities() {
         <div className="grid gap-16 lg:grid-cols-12 lg:items-end">
           <div className="lg:col-span-7">
             <SectionTitle
-              eyebrow="100+ Amenities"
+              eyebrow="100* Amenities"
               title={
                 <>
                   Because you deserve more than a plot.{" "}
                   <span className="italic text-gradient-bloom">A whole life.</span>
                 </>
               }
-              intro="Most plotted developments give you land and a wall. Mavallipura gives you a lifestyle — your gym, your child's school, your spa, your weekend, all within walking distance of your front door."
+              intro="Most plotted developments give you land and a wall. Mavallipura gives you a lifestyle — your gym, your spa, your weekend, all within walking distance of your front door."
             />
           </div>
           <div className="lg:col-span-5">
@@ -44,7 +44,7 @@ export function Amenities() {
                 Competitive context
               </div>
               <div className="mt-3 font-display text-2xl text-mist">
-                100+ amenities <span className="text-mist/40">vs.</span>{" "}
+                100* amenities <span className="text-mist/40">vs.</span>{" "}
                 <span className="text-mist/60">40–50</span> at the corridor average.
               </div>
             </div>
@@ -71,7 +71,7 @@ export function Amenities() {
             <div className="absolute bottom-8 left-8 right-8">
               <div className="text-[11px] uppercase tracking-[0.3em] text-gold">Flagship Clubhouse</div>
               <div className="mt-2 font-display text-3xl text-mist md:text-4xl">
-                35,000 sqft of resort, just steps from your plot.
+                25,000 sqft of resort, just steps from your plot.
               </div>
             </div>
           </motion.div>

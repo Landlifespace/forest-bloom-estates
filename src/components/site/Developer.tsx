@@ -11,8 +11,8 @@ const stats = [
 const promises = [
   {
     n: "I",
-    t: "Nature as architecture",
-    d: "20%+ of the site is green. We plan around the trees, not against them.",
+    t: "Biophilia as architecture",
+    d: "4.5 Acre of the site is green. We plan around the trees, not against them.",
   },
   {
     n: "II",
@@ -95,7 +95,7 @@ export function Developer() {
             ))}
           </div>
           <div className="mt-6 text-xs uppercase tracking-[0.25em] text-muted-foreground">
-            Legal partner — JSA Law Firm
+            Legal partner — Gobally Recognised Law Firm
           </div>
         </div>
       </div>
