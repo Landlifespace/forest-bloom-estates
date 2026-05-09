@@ -33,7 +33,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="mb-8 flex items-center gap-3 rounded-full glass px-5 py-2 text-[11px] uppercase tracking-[0.3em] text-gold-soft"
+          className="mb-24 flex items-center gap-3 rounded-full glass px-5 py-2 text-[11px] uppercase tracking-[0.3em] text-gold-soft"
         >
           <span className="h-1.5 w-1.5 rounded-full bg-gold animate-pulse" />
           North Bengaluru · Pre-Launch
@@ -43,11 +43,20 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, delay: 0.4 }}
-          className="max-w-5xl font-display text-[clamp(2.5rem,7vw,6.5rem)] leading-[0.95] text-mist"
+          className="font-signature signature-bold text-[clamp(3.5rem,10vw,9rem)] leading-none text-mist"
         >
-          A defined lifestyle,<br />
-          <span className="italic text-gradient-gold">rooted in the forest.</span>
+          Through the Woods
         </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.55 }}
+          className="mt-20 font-display text-[clamp(1rem,2.5vw,2rem)] leading-[1.2]"
+        >
+          <span className="italic text-gradient-pink-dark">A defined lifestyle,</span>{" "}
+          <span className="italic text-gradient-gold-dark">rooted in the forest.</span>
+        </motion.p>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -77,7 +86,7 @@ export function Hero() {
             href="#story"
             className="inline-flex items-center gap-3 rounded-full border border-mist/20 px-8 py-4 text-xs font-medium uppercase tracking-[0.25em] text-mist transition-colors hover:bg-mist/5"
           >
-            Discover Mavallipura
+            Discover Through the Woods
           </a>
         </motion.div>
 

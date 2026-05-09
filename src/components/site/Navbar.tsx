@@ -38,13 +38,10 @@ export function Navbar() {
         }`}
       >
         <a href="#top" className="flex items-center gap-3 group">
-          <span className="grid h-9 w-9 place-items-center rounded-full border border-gold/40 text-gold transition-transform group-hover:rotate-12">
-            <LogoMark />
-          </span>
-          <div className="leading-tight">
-            <div className="font-display text-lg tracking-wide text-mist">Mavallipura</div>
-            <div className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
-              Land &amp; Life Space
+          <div className="flex flex-col">
+            <div className="font-signature text-3xl leading-none text-mist">Through the Woods</div>
+            <div className="mt-3 text-[13px] uppercase tracking-[0.25em] text-muted-foreground font-bold">
+              By Land &amp; Life Space
             </div>
           </div>
         </a>
@@ -106,19 +103,5 @@ export function Navbar() {
         </motion.div>
       )}
     </motion.header>
-  );
-}
-
-function LogoMark() {
-  return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-      <path
-        d="M12 2c2 4 6 6 10 6-2 6-6 10-10 14-4-4-8-8-10-14 4 0 8-2 10-6z"
-        stroke="currentColor"
-        strokeWidth="1.2"
-        strokeLinejoin="round"
-      />
-      <circle cx="12" cy="11" r="1.5" fill="currentColor" />
-    </svg>
   );
 }

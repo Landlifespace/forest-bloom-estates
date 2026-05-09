@@ -18,7 +18,7 @@ export function FloatingActions() {
         }`}
       >
         <a
-          href="https://wa.me/919999999999"
+          href="https://wa.me/919591804455"
           target="_blank"
           rel="noopener"
           aria-label="WhatsApp"
@@ -27,7 +27,7 @@ export function FloatingActions() {
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.59-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.554-5.338 11.89-11.893 11.89a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.881.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.881-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.982z"/></svg>
         </a>
         <a
-          href="tel:+919999999999"
+          href="tel:+919591804455"
           aria-label="Call"
           className="grid h-12 w-12 place-items-center rounded-full bg-gold text-emerald-black shadow-gold transition-transform hover:scale-110"
         >
@@ -44,8 +44,8 @@ export function FloatingActions() {
 
       {/* Mobile sticky CTA bar */}
       <div className="fixed inset-x-0 bottom-0 z-40 grid grid-cols-3 gap-px border-t border-mist/10 glass-strong md:hidden">
-        <a href="tel:+919999999999" className="py-3 text-center text-[11px] uppercase tracking-[0.2em] text-mist">Call</a>
-        <a href="https://wa.me/919999999999" target="_blank" rel="noopener" className="py-3 text-center text-[11px] uppercase tracking-[0.2em] text-bougainvillea-soft">WhatsApp</a>
+        <a href="tel:+919591804455" className="py-3 text-center text-[11px] uppercase tracking-[0.2em] text-mist">Call</a>
+        <a href="https://wa.me/919591804455" target="_blank" rel="noopener" className="py-3 text-center text-[11px] uppercase tracking-[0.2em] text-bougainvillea-soft">WhatsApp</a>
         <a href="#contact" className="bg-gold py-3 text-center text-[11px] uppercase tracking-[0.2em] text-emerald-black">Visit</a>
       </div>
     </>

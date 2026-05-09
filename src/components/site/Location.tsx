@@ -3,20 +3,19 @@ import { SectionTitle } from "./SectionTitle";
 
 const corridors = [
   { d: "10–12%", l: "Annual appreciation, North Bengaluru corridor" },
-  { d: "189%", l: "5-year appreciation in Devanahalli" },
+  { d: "189%", l: "5-year appreciation in North Bangalore" },
   { d: "4.5L+", l: "Professionals living within 25 km" },
   { d: "<5", l: "Large-format land parcels left in this corridor" },
 ];
 
 const hubs = [
-  { name: "BIAL Airport", dist: "25 km", t: "Operational" },
-  { name: "Manyata Tech Park", dist: "16.1 km", t: "Tech Hub" },
-  { name: "Amazon HQ", dist: "13.1 km", t: "Tech Hub" },
-  { name: "KIADB Aerospace SEZ", dist: "30.2 km", t: "Aerospace" },
-  { name: "Foxconn iPhone Campus", dist: "30.6 km", t: "Manufacturing" },
+  { name: "PRR / Business Corridor ", dist: "Adjoining", t: "2027" },
+  { name: "Amazon HQ", dist: "13 km", t: "Tech Hub" },
+  { name: "Manyata Tech Park", dist: "16 km", t: "Tech Hub" },
   { name: "Air Force Station Yelahanka", dist: "22 km", t: "Defence" },
-  { name: "STRR Ring Road", dist: "Connecting", t: "2024" },
-  { name: "Proposed PRR (90m)", dist: "Adjacent", t: "2027" },
+  { name: "BIAL Airport", dist: "25 km", t: "Operational" },
+  { name: "KIADB Aerospace SEZ", dist: "30 km", t: "Aerospace" },
+  { name: "Foxconn iPhone Campus", dist: "31 km", t: "Manufacturing" },
 ];
 
 export function Location() {
@@ -63,11 +62,11 @@ export function Location() {
             <div className="relative aspect-[4/3] overflow-hidden rounded-3xl glass-strong">
               <iframe
                 title="Mavallipura location"
-                src="https://www.google.com/maps?q=Mavallipura,Bengaluru&output=embed"
-                className="absolute inset-0 h-full w-full grayscale-[40%] contrast-110"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1689.5886750488442!2d77.5361667!3d13.1261389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDA3JzM0LjEiTiA3N8KwMzInMTAuMiJF!5e1!3m2!1sen!2sin!4v1778174619130!5m2!1sen!2sin"
+                className="absolute inset-0 h-full w-full grayscale-[%] contrast-110"
                 style={{
                   filter:
-                    "invert(0.92) hue-rotate(180deg) saturate(0.7) brightness(0.95) contrast(0.95)",
+                    "invert(0.92) hue-rotate(180deg) saturate(0.) brightness(0.95) contrast(0.95)",
                 }}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

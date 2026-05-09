@@ -34,7 +34,7 @@ export function Story() {
                   <span className="italic text-gradient-bloom">North Bengaluru&rsquo;s</span> growth story.
                 </>
               }
-              intro="Mavallipura is a 29-acre  estate of premium villa plots — designed as a sanctuary, not a subdivision. A flagship clubhouse, layered green corridors, and a hundred quiet luxuries gathered behind one address."
+              intro="Through the Woods is a 29-acre  estate of premium villa plots — designed as a sanctuary, not a subdivision. A flagship clubhouse, layered green corridors, and a hundred quiet luxuries gathered behind one address."
             />
 
             <div className="mt-14 space-y-px overflow-hidden rounded-2xl glass">

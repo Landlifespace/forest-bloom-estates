@@ -41,7 +41,7 @@ export function Nature() {
             </span>
           </h2>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-mist/70">
-            A community is only as alive as the land it sits on. Mavallipura preserves and
+            A community is only as alive as the land it sits on. Through the Woods preserves and
             extends a layered forest canopy with bougainvillea-laced corridors, biophilic
             zones, organic composting, and on-site water recycling — so the address grows
             richer with every season.

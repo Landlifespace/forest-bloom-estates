@@ -13,7 +13,7 @@ const featured = [
 
 const groups = [
   { c: "Wellness & Health", n: 9, items: ["Spa", "Yoga & meditation", "Gym", "Physiotherapy", "Counseling"] },
-  { c: "Sports & Recreation", n: 10, items: ["Tennis", "Cricket", "Badminton", "Squash", "Basketball"] },
+  { c: "Sports & Recreation", n: 10, items: ["Tennis", "Cricket", "Badminton", "Pickleball", "Basketball"] },
   { c: "Smart & Sustainable", n: 15, items: ["Solar power", "Wi-Fi 6 mesh", "Rainwater harvesting", "Composting", "EV stations ×50+"] },
   { c: "Culture & Community", n: 8, items: ["Amphitheater", "Library", "Artist residence", "Cinema", "Co-housing pods"] },
   { c: "Education & Work", n: 7, items: ["Co-working hub", "Innovation lab", "Skill training", "Daycare", "Boardroom"] },
@@ -35,7 +35,7 @@ export function Amenities() {
                   <span className="italic text-gradient-bloom">A whole life.</span>
                 </>
               }
-              intro="Most plotted developments give you land and a wall. Mavallipura gives you a lifestyle — your gym, your spa, your weekend, all within walking distance of your front door."
+              intro="Most plotted developments give you land and a wall. Through the Woods gives you a lifestyle — your gym, your spa, your weekend, all within walking distance of your front door."
             />
           </div>
           <div className="lg:col-span-5">

@@ -31,7 +31,7 @@ export function SectionTitle({
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.4 }}
         transition={{ duration: 0.8, delay: 0.1 }}
-        className="mt-5 font-display text-[clamp(2rem,4vw,3.75rem)] leading-[1.05] text-mist"
+        className="mt-5 font-display text-[clamp(1.75rem,5vw,3.75rem)] leading-[1.05] text-mist"
       >
         {title}
       </motion.h2>

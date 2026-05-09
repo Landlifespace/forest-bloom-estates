@@ -19,7 +19,7 @@ export function Contact() {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitted, setSubmitted] = useState(false);
 
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const onSubmit = (e: React.SyntheticEvent<HTMLFormElement>) => {
     e.preventDefault();
     const fd = new FormData(e.currentTarget);
     const data = Object.fromEntries(fd.entries());
@@ -31,6 +31,11 @@ export function Contact() {
       return;
     }
     setErrors({});
+    const subject = encodeURIComponent(`Site Visit Enquiry — ${data.name}`);
+    const body = encodeURIComponent(
+      `Name: ${data.name}\nPhone: ${data.phone}\nEmail: ${data.email}\nBudget: ${data.budget}\nPlot Size: ${data.size}\nMessage: ${data.message || "N/A"}`
+    );
+    window.location.href = `mailto:sales@landlifespace.in?subject=${subject}&body=${body}`;
     setSubmitted(true);
   };
 
@@ -124,13 +129,13 @@ export function Contact() {
               </div>
               <div className="mt-6 grid grid-cols-2 gap-3">
                 <a
-                  href="tel:+919999999999"
+                  href="tel:+919591804455"
                   className="rounded-xl border border-mist/15 px-4 py-3 text-center text-xs uppercase tracking-[0.2em] text-mist transition-colors hover:bg-gold hover:text-emerald-black hover:border-gold"
                 >
                   Call Sales
                 </a>
                 <a
-                  href="https://wa.me/919999999999"
+                  href="https://wa.me/919591804455"
                   target="_blank"
                   rel="noopener"
                   className="rounded-xl bg-bloom px-4 py-3 text-center text-xs uppercase tracking-[0.2em] text-white"
@@ -141,20 +146,18 @@ export function Contact() {
               <div className="mt-5 space-y-2 text-sm text-mist/70">
                 <div>📞 +91 95918 04455</div>
                 <div>✉ sales@landlifespace.in</div>
-                <div>🌐 www.landlifespace.in</div>
+                <a href="https://www.landlifespace.in" target="_blank" rel="noopener" className="hover:text-gold transition-colors">🌐 www.landlifespace.in</a>
               </div>
             </div>
 
             <div className="overflow-hidden rounded-3xl glass">
               <iframe
                 title="Map"
-                src="https://www.google.com/maps?q=Mavallipura,Bengaluru&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1481.7915615157926!2d77.53548348151841!3d13.126222070956635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDA3JzM0LjEiTiA3N8KwMzInMTAuMiJF!5e1!3m2!1sen!2sin!4v1778223602920!5m2!1sen!2sin"
                 className="h-64 w-full"
-                style={{
-                  filter:
-                    "invert(0.92) hue-rotate(180deg) saturate(0.7) brightness(0.95) contrast(0.95)",
-                }}
+                style={{}}
                 loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
               />
             </div>
           </div>

@@ -4,12 +4,8 @@ import { SectionTitle } from "./SectionTitle";
 
 const faqs = [
   {
-    q: "Is Mavallipura RERA registered?",
+    q: "Is Through the Woods RERA registered?",
     a: "RERA registration is in process. All EOIs collected now are fully non-binding and refundable. We will not accept any booking amount before RERA registration. The RERA number will be displayed prominently on this site at launch.",
-  },
-  {
-    q: "What is the current legal status of the land?",
-    a: "Agricultural status with CLU permissible under BDA jurisdiction. Title opinion is 90% complete by Gobally Recognised Law Firm — one of India's leading real estate legal firms. All 13 survey numbers are under MOU, totalling 29 acres 0.25 guntas.",
   },
   {
     q: "When will I get possession of my plot?",
@@ -29,7 +25,7 @@ const faqs = [
   },
   {
     q: "Is this for self-use or investment?",
-    a: "Both. Build your dream home at your own pace inside a premium  community with 100* amenities. North Bengaluru has delivered 35%+ five-year appreciation; Devanahalli showed 189% over five years.",
+    a: "Both. Build your dream home at your own pace inside a premium  community with 100* amenities.North Bengaluru continues to outperform as a high-growth real estate destination, which has evolved into one of the city’s most promising investment hubs.",
   },
 ];
 

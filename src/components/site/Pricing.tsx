@@ -94,7 +94,7 @@ export function Pricing() {
           <div className="rounded-2xl glass p-6">
             <h3 className="font-display text-xl text-mist">What is included</h3>
             <ul className="mt-4 space-y-2 text-sm text-mist/70">
-              <li>— Registered title to your plot</li>
+              <li></li>
               <li>— Fully developed roads, lit boulevards</li>
               <li>— Underground utilities, drainage</li>
               <li>— Perimeter wall &amp;  security</li>

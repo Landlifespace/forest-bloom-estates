@@ -1,12 +1,6 @@
 import { motion } from "framer-motion";
 import { SectionTitle } from "./SectionTitle";
 
-const stats = [
-  { v: "30M", l: "sqft delivered across India" },
-  { v: "₹1,300 Cr", l: "Top-line revenue (FY 2022)" },
-  { v: "16 yrs", l: "Combined leadership experience" },
-  { v: "0", l: "Defect delivery — a hard commitment" },
-];
 
 const promises = [
   {
@@ -47,22 +41,6 @@ export function Developer() {
           }
           intro="Land & Life Space is a young company with the track record of an established one. Every senior team member has delivered premium real estate at India's best developers — and left to build something with their name on it."
         />
-
-        <div className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {stats.map((s, i) => (
-            <motion.div
-              key={s.l}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: i * 0.08 }}
-              className="glass-strong rounded-2xl p-7"
-            >
-              <div className="font-display text-4xl text-gradient-gold">{s.v}</div>
-              <div className="mt-3 text-xs leading-relaxed text-mist/60">{s.l}</div>
-            </motion.div>
-          ))}
-        </div>
 
         <div className="mt-16 grid gap-4 md:grid-cols-2">
           {promises.map((p, i) => (
