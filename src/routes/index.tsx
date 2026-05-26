@@ -6,7 +6,7 @@ import { Location } from "@/components/site/Location";
 import { Amenities } from "@/components/site/Amenities";
 import { Nature } from "@/components/site/Nature";
 import { MasterPlan } from "@/components/site/MasterPlan";
-import { Pricing } from "@/components/site/Pricing";
+// import { Pricing } from "@/components/site/Pricing";
 import { Developer } from "@/components/site/Developer";
 import { FAQ } from "@/components/site/FAQ";
 import { Contact } from "@/components/site/Contact";
@@ -28,7 +28,7 @@ function Index() {
         <Amenities />
         <Nature />
         <MasterPlan />
-        <Pricing />
+        {/* <Pricing /> */}
         <Developer />
         <FAQ />
         <Contact />
