@@ -24,7 +24,7 @@ export function MasterPlan() {
               <span className="italic text-gradient-gold">Find yours.</span>
             </>
           }
-          intro="29 contiguous acres in BDA jurisdiction. A flagship clubhouse at the centre, a perimeter of full-width boulevards, and quiet plot clusters webbed by green corridors."
+          intro="25 contiguous acres in BDA jurisdiction. A flagship clubhouse at the centre, a perimeter of full-width boulevards, and quiet plot clusters webbed by green corridors."
         />
 
         <motion.div
@@ -50,7 +50,7 @@ export function MasterPlan() {
                   <div className="text-[11px] uppercase tracking-[0.3em] text-gold-soft">
                     Total land
                   </div>
-                  <div className="font-display text-[clamp(2rem,9vw,2.25rem)] text-mist">29 acres</div>
+                  <div className="font-display text-[clamp(2rem,9vw,2.25rem)] text-mist">25 acres</div>
                 </div>
                 <div>
                   <div className="text-[11px] uppercase tracking-[0.3em] text-gold-soft">

@@ -3,7 +3,7 @@ import heroForest from "@/assets/hero-forest.jpg";
 import { Petals } from "./Petals";
 
 const stats = [
-  { v: "29", l: "Acres" },
+  { v: "25", l: "Acres" },
   { v: "100*", l: "Amenities" },
   { v: "25,000", l: "sqft Clubhouse" },
   { v: "Oct ’26", l: "Launch" },

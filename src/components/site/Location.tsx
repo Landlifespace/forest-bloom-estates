@@ -11,8 +11,8 @@ const corridors = [
 const hubs = [
   { name: "PRR / Business Corridor ", dist: "Adjoining", t: "2027" },
   { name: "Amazon HQ", dist: "13 km", t: "Tech Hub" },
-  { name: "Manyata Tech Park", dist: "16 km", t: "Tech Hub" },
-  { name: "Air Force Station Yelahanka", dist: "22 km", t: "Defence" },
+  { name: "Air Force Station Yelahanka", dist: "14 km", t: "Defence" },
+  { name: "Manyata Tech Park", dist: "17 km", t: "Tech Hub" },
   { name: "BIAL Airport", dist: "25 km", t: "Operational" },
   { name: "KIADB Aerospace SEZ", dist: "30 km", t: "Aerospace" },
   { name: "Foxconn iPhone Campus", dist: "31 km", t: "Manufacturing" },
