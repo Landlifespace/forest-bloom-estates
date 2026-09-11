@@ -34,14 +34,14 @@ export function MasterPlan() {
           transition={{ duration: 1.2 }}
           className="mt-12 md:mt-16 overflow-hidden rounded-3xl shadow-soft"
         >
-          <div className="relative">
+          <div className="relative bg-emerald-black">
             <img
               src={masterplan}
               alt="Mavallipura master plan aerial"
               loading="lazy"
               width={1600}
               height={1100}
-              className="w-full object-cover min-h-[280px]"
+              className="w-full object-contain min-h-[280px]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-emerald-black/90 via-transparent to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-4 md:p-12">
