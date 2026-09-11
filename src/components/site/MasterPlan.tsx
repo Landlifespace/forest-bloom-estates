@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { SectionTitle } from "./SectionTitle";
-import masterplan from "@/assets/masterplan.jpg";
+import masterplan from "@/assets/masterplan.png";
 
 const features = [
   "Biophilic spine boulevard",

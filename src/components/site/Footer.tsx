@@ -38,7 +38,7 @@ export function Footer() {
             </div>
             <p className="mt-6 max-w-md text-sm leading-relaxed text-mist/60">
               A signature plotted community at the heart of North Bengaluru&rsquo;s growth
-              corridor. 25 acres. 100* amenities. One address that only gets better.
+              corridor. 25 acres. 60* amenities. One address that only gets better.
             </p>
 
             <div className="mt-8 space-y-2 text-sm text-mist/70">

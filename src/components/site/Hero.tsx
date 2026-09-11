@@ -4,9 +4,9 @@ import { Petals } from "./Petals";
 
 const stats = [
   { v: "25", l: "Acres" },
-  { v: "100*", l: "Amenities" },
-  { v: "25,000", l: "sqft Clubhouse" },
-  { v: "Oct ’26", l: "Launch" },
+  { v: "60*", l: "Amenities" },
+  { v: "20,000", l: "sqft Clubhouse" },
+  { v: "Jan ’27", l: "Launch" },
 ];
 
 export function Hero() {

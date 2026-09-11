@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     q: "When will I get possession of my plot?",
-    a: "Possession is expected 24 months from RERA registration date. Realistic RERA registration: Octust 2026. Expected possession: mid-2028. This is a commitment, not an estimate.",
+    a: "Possession is expected 24 months from RERA registration date. Realistic RERA registration: January 2027. Expected possession: early 2029. This is a commitment, not an estimate.",
   },
   {
     q: "What sizes are the plots and what is the price?",
@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     q: "Is this for self-use or investment?",
-    a: "Both. Build your dream home at your own pace inside a premium  community with 100* amenities.North Bengaluru continues to outperform as a high-growth real estate destination, which has evolved into one of the city’s most promising investment hubs.",
+    a: "Both. Build your dream home at your own pace inside a premium  community with 60* amenities.North Bengaluru continues to outperform as a high-growth real estate destination, which has evolved into one of the city’s most promising investment hubs.",
   },
 ];
 

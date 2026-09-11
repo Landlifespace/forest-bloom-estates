@@ -16,7 +16,7 @@ const principles = [
   {
     n: "03",
     t: "Built without compromise",
-    d: "Underground utilities, full-width boulevards, and a 25,000 sqft clubhouse — the infrastructure of a forever home.",
+    d: "Underground utilities, full-width boulevards, and a 20,000 sqft clubhouse — the infrastructure of a forever home.",
   },
 ];
 
