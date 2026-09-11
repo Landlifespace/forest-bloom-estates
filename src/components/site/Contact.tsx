@@ -35,7 +35,7 @@ export function Contact() {
     const body = encodeURIComponent(
       `Name: ${data.name}\nPhone: ${data.phone}\nEmail: ${data.email}\nBudget: ${data.budget}\nPlot Size: ${data.size}\nMessage: ${data.message || "N/A"}`
     );
-    window.location.href = `mailto:sales@landlifespace.in?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:Info@landlifespace.in?subject=${subject}&body=${body}`;
     setSubmitted(true);
   };
 
@@ -145,7 +145,7 @@ export function Contact() {
               </div>
               <div className="mt-5 space-y-2 text-sm text-mist/70">
                 <div>📞 +91 95918 04455</div>
-                <div>✉ sales@landlifespace.in</div>
+                <div>✉ Info@landlifespace.in</div>
                 <a href="https://www.landlifespace.in" target="_blank" rel="noopener" className="hover:text-gold transition-colors">🌐 www.landlifespace.in</a>
               </div>
             </div>

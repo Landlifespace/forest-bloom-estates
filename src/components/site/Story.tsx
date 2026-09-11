@@ -6,7 +6,7 @@ const principles = [
   {
     n: "01",
     t: "Biophilia as architecture",
-    d: "4.5 Acre of the site is preserved as living green space. We plan the boulevard around the trees, not the other way around.",
+    d: "3+ Acre of the site is preserved as living green space. We plan the boulevard around the trees, not the other way around.",
   },
   {
     n: "02",

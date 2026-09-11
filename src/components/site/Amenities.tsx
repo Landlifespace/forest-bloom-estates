@@ -8,7 +8,7 @@ const featured = [
   { t: "Ayurveda Wellness Spa", d: "A retreat for residents with Ayurveda, Unani, Chinese medicine." },
   { t: "24/7 Medical Clinic", d: "An OPD on-site, because care should never wait." },
   { t: "Pre-school & Daycare", d: "Inside the gates — your morning runs short." },
-  { t: "1,000+ Trees, 4.5 Acre Greens", d: "Living infrastructure, planned before the roads." },
+  { t: "1,000+ Trees, 3+ Acre Greens", d: "Living infrastructure, planned before the roads." },
 ];
 
 const groups = [

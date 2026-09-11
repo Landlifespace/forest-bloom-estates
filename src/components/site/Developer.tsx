@@ -6,7 +6,7 @@ const promises = [
   {
     n: "I",
     t: "Biophilia as architecture",
-    d: "4.5 Acre of the site is green. We plan around the trees, not against them.",
+    d: "3+ Acre of the site is green. We plan around the trees, not against them.",
   },
   {
     n: "II",

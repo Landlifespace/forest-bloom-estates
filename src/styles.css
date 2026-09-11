@@ -143,24 +143,32 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    padding-right: 0.12em;
+    margin-right: -0.12em;
   }
   .text-gradient-bloom {
     background: var(--gradient-bloom);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    padding-right: 0.12em;
+    margin-right: -0.12em;
   }
   .text-gradient-pink-dark {
     background: linear-gradient(135deg, var(--bougainvillea-soft), var(--bougainvillea));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    padding-right: 0.12em;
+    margin-right: -0.12em;
   }
   .text-gradient-gold-dark {
     background: linear-gradient(135deg, var(--gold-soft), var(--gold));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    padding-right: 0.12em;
+    margin-right: -0.12em;
   }
   .bg-canopy { background: var(--gradient-canopy); }
   .bg-sunset { background: var(--gradient-sunset); }
