@@ -7,7 +7,6 @@ const links = [
   { href: "#amenities", label: "Amenities" },
   { href: "#nature", label: "Nature" },
   { href: "#masterplan", label: "Master Plan" },
-  { href: "#pricing", label: "Plots" },
   { href: "#developer", label: "Developer" },
   { href: "#contact", label: "Contact" },
 ];

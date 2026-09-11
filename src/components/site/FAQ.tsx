@@ -12,8 +12,8 @@ const faqs = [
     a: "Possession is expected 24 months from RERA registration date. Realistic RERA registration: January 2027. Expected possession: early 2029. This is a commitment, not an estimate.",
   },
   {
-    q: "What sizes are the plots and what is the price?",
-    a: "Plots range from approximately 600 sqft to 4,000+ sqft. Pre-launch indicative pricing is ₹6,500–8,500 per sqft. Final pricing and the exact plot matrix will be confirmed at RERA launch.",
+    q: "What sizes are the plots?",
+    a: "Plots range from approximately 1,200 sqft to 4,000 sqft. Final pricing and the exact plot matrix will be confirmed at RERA launch.",
   },
   {
     q: "Are the plots Vaastu compliant?",

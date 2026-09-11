@@ -13,7 +13,7 @@ const schema = z.object({
 });
 
 const budgets = ["₹40L – ₹70L", "₹70L – ₹1 Cr", "₹1 – 1.5 Cr", "₹1.5 – 2.5 Cr", "₹2.5 Cr+"];
-const sizes = ["600 – 1,000 sqft", "1,000 – 1,500 sqft", "1,500 – 2,400 sqft", "2,400 sqft+", "Show me all"];
+const sizes = ["1,200 – 1,800 sqft", "1,800 – 2,400 sqft", "2,400 – 3,200 sqft", "3,200 sqft+", "Show me all"];
 
 export function Contact() {
   const [errors, setErrors] = useState<Record<string, string>>({});

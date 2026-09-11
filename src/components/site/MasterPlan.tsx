@@ -62,7 +62,7 @@ export function MasterPlan() {
                   <div className="text-[11px] uppercase tracking-[0.3em] text-gold-soft">
                     Plot range
                   </div>
-                  <div className="font-display text-lg md:text-2xl text-mist">600 – 4,000+ sqft</div>
+                  <div className="font-display text-lg md:text-2xl text-mist">1,200 – 4,000 sqft</div>
                 </div>
               </div>
             </div>

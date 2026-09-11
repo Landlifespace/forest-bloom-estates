@@ -6,7 +6,6 @@ const cols = [
       { t: "Location", href: "#location" },
       { t: "Amenities", href: "#amenities" },
       { t: "Master Plan", href: "#masterplan" },
-      { t: "Plot Pricing", href: "#pricing" },
     ],
   },
   {
