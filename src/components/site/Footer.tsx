@@ -41,7 +41,7 @@ export function Footer() {
             </p>
 
             <div className="mt-8 space-y-2 text-sm text-mist/70">
-              <div>Mavallipura, , Yelahanka. Bengaluru</div>
+              <div>Mavallipura, Yelahanka, Bengaluru</div>
               <div>+91 95918 04455 · Info@landlifespace.in</div>
               <a href="https://www.landlifespace.in" target="_blank" rel="noopener" className="hover:text-gold transition-colors">www.landlifespace.in</a>
             </div>

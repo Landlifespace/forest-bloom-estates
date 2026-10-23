@@ -61,7 +61,7 @@ export function Location() {
           >
             <div className="relative aspect-[4/3] overflow-hidden rounded-3xl glass-strong">
               <iframe
-                title="Mavallipura location"
+                title="Through the Woods location, Yelahanka"
                 src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1689.5886750488442!2d77.5361667!3d13.1261389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDA3JzM0LjEiTiA3N8KwMzInMTAuMiJF!5e1!3m2!1sen!2sin!4v1778174619130!5m2!1sen!2sin"
                 className="absolute inset-0 h-full w-full grayscale-[%] contrast-110"
                 style={{

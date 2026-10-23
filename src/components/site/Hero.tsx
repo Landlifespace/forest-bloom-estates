@@ -15,7 +15,7 @@ export function Hero() {
       <div className="absolute inset-0 -z-20">
         <img
           src={heroForest}
-          alt="Mavallipura forest at sunset"
+          alt="Yelahanka forest at sunset"
           width={1920}
           height={1280}
           className="h-full w-full object-cover scale-105"

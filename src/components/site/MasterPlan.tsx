@@ -37,7 +37,7 @@ export function MasterPlan() {
           <div className="relative bg-emerald-black">
             <img
               src={masterplan}
-              alt="Mavallipura master plan aerial"
+              alt="Through the Woods master plan aerial, Yelahanka"
               loading="lazy"
               width={1600}
               height={1100}
