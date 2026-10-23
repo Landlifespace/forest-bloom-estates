@@ -8,7 +8,7 @@ export const getRouter = () => {
   const router = createRouter({
     routeTree,
     context: { queryClient },
-    basepath: "/forest-bloom-estates",
+    basepath: "/",
     scrollRestoration: true,
     defaultPreloadStaleTime: 0,
   });
