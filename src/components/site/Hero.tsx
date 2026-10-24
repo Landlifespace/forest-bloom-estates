@@ -16,6 +16,7 @@ export function Hero() {
         <img
           src={heroForest}
           alt="Yelahanka forest at sunset"
+          fetchPriority="high"
           width={1920}
           height={1280}
           className="h-full w-full object-cover scale-105"
@@ -26,7 +27,6 @@ export function Hero() {
       <div className="absolute inset-0 -z-10 grain opacity-[0.07]" />
 
       <Petals count={18} />
-
 
       <div className="relative z-10 mx-auto flex min-h-[100svh] max-w-[1400px] flex-col items-center justify-center px-6 pt-32 pb-20 text-center lg:px-10">
         <motion.div
@@ -64,9 +64,9 @@ export function Hero() {
           transition={{ duration: 1, delay: 0.7 }}
           className="mt-8 max-w-2xl text-base leading-relaxed text-mist/70 md:text-lg"
         >
-          A limited collection of premium villa plots in a nature-first  community —
-          designed for the family that wants a home built on their terms, in Bengaluru&rsquo;s
-          fastest-growing corridor.
+          A limited collection of premium villa plots in a nature-first community — designed for the
+          family that wants a home built on their terms, in Bengaluru&rsquo;s fastest-growing
+          corridor.
         </motion.p>
 
         <motion.div

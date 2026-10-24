@@ -1,3 +1,5 @@
+import { EMAIL, PHONE_DISPLAY, WHATSAPP_URL } from "@/lib/site";
+
 const cols = [
   {
     h: "Project",
@@ -29,21 +31,32 @@ export function Footer() {
           <div className="lg:col-span-5">
             <div className="flex items-center gap-3">
               <div>
-                <div className="font-signature text-4xl leading-none text-mist">Through the Woods</div>
+                <div className="font-signature text-4xl leading-none text-mist">
+                  Through the Woods
+                </div>
                 <div className="mt-3 text-[13px] uppercase tracking-[0.3em] text-muted-foreground font-bold">
                   By Land &amp; Life Space
                 </div>
               </div>
             </div>
             <p className="mt-6 max-w-md text-sm leading-relaxed text-mist/60">
-              A signature plotted community at the heart of North Bengaluru&rsquo;s growth
-              corridor. 25 acres. 60* amenities. One address that only gets better.
+              A signature plotted community at the heart of North Bengaluru&rsquo;s growth corridor.
+              25 acres. 60* amenities. One address that only gets better.
             </p>
 
             <div className="mt-8 space-y-2 text-sm text-mist/70">
               <div>Mavallipura, Yelahanka, Bengaluru</div>
-              <div>+91 95918 04455 · Info@landlifespace.in</div>
-              <a href="https://www.landlifespace.in" target="_blank" rel="noopener" className="hover:text-gold transition-colors">www.landlifespace.in</a>
+              <div>
+                {PHONE_DISPLAY} · {EMAIL}
+              </div>
+              <a
+                href="https://www.landlifespace.in"
+                target="_blank"
+                rel="noopener"
+                className="hover:text-gold transition-colors"
+              >
+                www.landlifespace.in
+              </a>
             </div>
 
             <div className="mt-6 flex gap-3">
@@ -119,9 +132,7 @@ export function Footer() {
           ))}
 
           <div className="lg:col-span-3">
-            <div className="text-[11px] uppercase tracking-[0.3em] text-gold-soft">
-              Resources
-            </div>
+            <div className="text-[11px] uppercase tracking-[0.3em] text-gold-soft">Resources</div>
             <div className="mt-5 space-y-3">
               <a
                 href="#contact"
@@ -133,10 +144,10 @@ export function Footer() {
                 href="#contact"
                 className="block rounded-full border border-mist/20 px-5 py-3 text-center text-[11px] uppercase tracking-[0.25em] text-mist transition-colors hover:bg-mist/5"
               >
-                Download Brochure
+                Request Brochure
               </a>
               <a
-                href="https://wa.me/919591804455"
+                href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener"
                 className="block rounded-full bg-bloom px-5 py-3 text-center text-[11px] uppercase tracking-[0.25em] text-white"
@@ -150,18 +161,41 @@ export function Footer() {
         <div className="my-12 divider-leaf" />
 
         <div className="flex flex-col gap-4 text-xs text-mist/50 md:flex-row md:items-center md:justify-between">
-          <div>© {new Date().getFullYear()} Land &amp; Life Space Pvt Ltd. All rights reserved.</div>
+          <div>
+            © {new Date().getFullYear()} Land &amp; Life Space Pvt Ltd. All rights reserved.
+          </div>
           <div className="flex flex-wrap items-center gap-4">
-            <a href="https://landlifespace.in/rera-disclaimer/" target="_blank" rel="noopener" className="hover:text-gold">RERA Disclaimer</a>
-            <a href="https://landlifespace.in/privacy-policy" target="_blank" rel="noopener" className="hover:text-gold">Privacy</a>
-            <a href="https://landlifespace.in/terms-and-condition/" target="_blank" rel="noopener" className="hover:text-gold">Terms &amp; Conditions</a>
+            <a
+              href="https://landlifespace.in/rera-disclaimer/"
+              target="_blank"
+              rel="noopener"
+              className="hover:text-gold"
+            >
+              RERA Disclaimer
+            </a>
+            <a
+              href="https://landlifespace.in/privacy-policy"
+              target="_blank"
+              rel="noopener"
+              className="hover:text-gold"
+            >
+              Privacy
+            </a>
+            <a
+              href="https://landlifespace.in/terms-and-condition/"
+              target="_blank"
+              rel="noopener"
+              className="hover:text-gold"
+            >
+              Terms &amp; Conditions
+            </a>
           </div>
         </div>
 
         <div className="mt-8 max-w-4xl text-[10px] leading-relaxed text-mist/30">
           Disclaimer: Pricing, plot sizes, amenity counts, and timelines indicated are pre-launch
-          and indicative. Final terms will be confirmed at RERA registration. Images and renders
-          are artistic representations. We do not accept booking amounts before RERA registration.
+          and indicative. Final terms will be confirmed at RERA registration. Images and renders are
+          artistic representations. We do not accept booking amounts before RERA registration.
         </div>
       </div>
     </footer>

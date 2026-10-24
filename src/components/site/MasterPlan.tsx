@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { SectionTitle } from "./SectionTitle";
-import masterplan from "@/assets/masterplan.png";
+import masterplan from "@/assets/masterplan.webp";
 
 const features = [
   "Biophilic spine boulevard",
@@ -20,8 +20,7 @@ export function MasterPlan() {
           align="center"
           title={
             <>
-              Every plot has a story.{" "}
-              <span className="italic text-gradient-gold">Find yours.</span>
+              Every plot has a story. <span className="italic text-gradient-gold">Find yours.</span>
             </>
           }
           intro="25 contiguous acres in BDA jurisdiction. A flagship clubhouse at the centre, a perimeter of full-width boulevards, and quiet plot clusters webbed by green corridors."
@@ -39,8 +38,8 @@ export function MasterPlan() {
               src={masterplan}
               alt="Through the Woods master plan aerial, Yelahanka"
               loading="lazy"
-              width={1600}
-              height={1100}
+              width={1094}
+              height={1438}
               className="w-full object-contain min-h-[280px]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-emerald-black/90 via-transparent to-transparent" />
@@ -50,7 +49,9 @@ export function MasterPlan() {
                   <div className="text-[11px] uppercase tracking-[0.3em] text-gold-soft">
                     Total land
                   </div>
-                  <div className="font-display text-[clamp(2rem,9vw,2.25rem)] text-mist">25 acres</div>
+                  <div className="font-display text-[clamp(2rem,9vw,2.25rem)] text-mist">
+                    25 acres
+                  </div>
                 </div>
                 <div>
                   <div className="text-[11px] uppercase tracking-[0.3em] text-gold-soft">
@@ -62,7 +63,9 @@ export function MasterPlan() {
                   <div className="text-[11px] uppercase tracking-[0.3em] text-gold-soft">
                     Plot range
                   </div>
-                  <div className="font-display text-lg md:text-2xl text-mist">1,200 – 4,000 sqft</div>
+                  <div className="font-display text-lg md:text-2xl text-mist">
+                    1,200 – 4,000 sqft
+                  </div>
                 </div>
               </div>
             </div>
