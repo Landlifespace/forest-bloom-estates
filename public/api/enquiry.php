@@ -17,6 +17,64 @@ function reply(int $code, array $body): never
     exit;
 }
 
+/**
+ * Minimal authenticated SMTP client (implicit TLS). Credentials live in
+ * <above-webroot>/enquiries/smtp.php, which returns ['user' => ..., 'pass' => ...].
+ * Returns null on success or an error string.
+ */
+function smtp_send(array $cfg, string $from, array $to, string $data): ?string
+{
+    $fp = @stream_socket_client('ssl://smtp.hostinger.com:465', $errno, $errstr, 12);
+    if (!$fp) {
+        return "connect: $errstr";
+    }
+    stream_set_timeout($fp, 12);
+    $read = static function () use ($fp): string {
+        $out = '';
+        while (($line = fgets($fp, 1024)) !== false) {
+            $out .= $line;
+            if (isset($line[3]) && $line[3] === ' ') {
+                break;
+            }
+        }
+        return $out;
+    };
+    $cmd = static function (string $c, string $expect) use ($fp, $read): ?string {
+        fwrite($fp, $c . "\r\n");
+        $r = $read();
+        return str_starts_with($r, $expect) ? null : trim($r);
+    };
+    $err = null;
+    if (!str_starts_with($read(), '220')) {
+        fclose($fp);
+        return 'banner';
+    }
+    $steps = [
+        ['EHLO throughthewoods.in', '250'],
+        ['AUTH LOGIN', '334'],
+        [base64_encode($cfg['user']), '334'],
+        [base64_encode($cfg['pass']), '235'],
+        ["MAIL FROM:<$from>", '250'],
+    ];
+    foreach ($to as $rcpt) {
+        $steps[] = ["RCPT TO:<$rcpt>", '250'];
+    }
+    $steps[] = ['DATA', '354'];
+    foreach ($steps as [$c, $e]) {
+        if (($err = $cmd($c, $e)) !== null) {
+            @fwrite($fp, "QUIT\r\n");
+            fclose($fp);
+            return $c === base64_encode($cfg['pass']) ? "auth: $err" : $err;
+        }
+    }
+    // Dot-stuff and terminate.
+    $data = preg_replace('/^\./m', '..', str_replace("\r\n", "\n", $data));
+    $err = $cmd(str_replace("\n", "\r\n", $data) . "\r\n.", '250');
+    @fwrite($fp, "QUIT\r\n");
+    fclose($fp);
+    return $err;
+}
+
 if (($_SERVER['REQUEST_METHOD'] ?? '') !== 'POST') {
     header('Allow: POST');
     reply(405, ['ok' => false]);
@@ -109,21 +167,49 @@ $body = "New site-visit enquiry from throughthewoods.in\n\n"
     . 'Message:   ' . ($message !== '' ? $message : 'N/A') . "\n\n"
     . 'Received:  ' . gmdate('Y-m-d H:i') . " UTC\n";
 $subject = mb_encode_mimeheader('New site-visit enquiry - ' . $name, 'UTF-8');
-$headers = implode("\r\n", [
-    'From: Through the Woods <' . MAIL_FROM . '>',
-    'Reply-To: ' . $email,
-    'MIME-Version: 1.0',
-    'Content-Type: text/plain; charset=UTF-8',
-    'X-Mailer: throughthewoods.in',
-]);
-$mailed = mail(MAIL_TO, $subject, $body, $headers, '-f' . MAIL_FROM);
+$recipients = array_map('trim', explode(',', MAIL_TO));
+$method = 'none';
+$mailError = null;
+$mailed = false;
+
+$cfgFile = $store . '/smtp.php';
+$cfg = is_file($cfgFile) ? include $cfgFile : null;
+if (is_array($cfg) && !empty($cfg['user']) && !empty($cfg['pass'])) {
+    $method = 'smtp';
+    $host = 'throughthewoods.in';
+    $msg = implode("\r\n", [
+        'Date: ' . date('r'),
+        'From: Through the Woods <' . MAIL_FROM . '>',
+        'To: ' . implode(', ', $recipients),
+        'Reply-To: ' . $email,
+        'Subject: ' . $subject,
+        'Message-ID: <' . bin2hex(random_bytes(8)) . '@' . $host . '>',
+        'MIME-Version: 1.0',
+        'Content-Type: text/plain; charset=UTF-8',
+        'Content-Transfer-Encoding: quoted-printable',
+        '',
+        quoted_printable_encode($body),
+    ]);
+    $mailError = smtp_send($cfg, MAIL_FROM, $recipients, $msg);
+    $mailed = $mailError === null;
+}
+if (!$mailed) {
+    // Fallback: local relay. Not reliable on this host, so the lead log remains the source of truth.
+    $method .= '+mail';
+    $headers = implode("\r\n", [
+        'From: Through the Woods <' . MAIL_FROM . '>',
+        'Reply-To: ' . $email,
+        'MIME-Version: 1.0',
+        'Content-Type: text/plain; charset=UTF-8',
+    ]);
+    $mailed = mail(MAIL_TO, $subject, $body, $headers, '-f' . MAIL_FROM);
+}
 
 // Record the outcome so a lost mail is visible, not silent.
-$status = ['received' => $lead['received'], 'mailed' => $mailed, 'saved' => $saved, 'error' => $mailed ? null : (error_get_last()['message'] ?? 'mail() returned false')];
-@file_put_contents($store . '/mail-status.jsonl', json_encode($status) . "
-", FILE_APPEND | LOCK_EX);
+$status = ['received' => $lead['received'], 'method' => $method, 'mailed' => $mailed, 'error' => $mailError];
+@file_put_contents($store . '/mail-status.jsonl', json_encode($status) . "\n", FILE_APPEND | LOCK_EX);
 
 if (!$saved && !$mailed) {
     reply(500, ['ok' => false]);
 }
-reply(200, ['ok' => true, 'mailed' => $mailed]);
+reply(200, ['ok' => true, 'mailed' => $mailed, 'via' => $method]);
