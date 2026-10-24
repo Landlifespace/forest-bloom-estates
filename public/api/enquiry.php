@@ -118,7 +118,12 @@ $headers = implode("\r\n", [
 ]);
 $mailed = mail(MAIL_TO, $subject, $body, $headers, '-f' . MAIL_FROM);
 
+// Record the outcome so a lost mail is visible, not silent.
+$status = ['received' => $lead['received'], 'mailed' => $mailed, 'saved' => $saved, 'error' => $mailed ? null : (error_get_last()['message'] ?? 'mail() returned false')];
+@file_put_contents($store . '/mail-status.jsonl', json_encode($status) . "
+", FILE_APPEND | LOCK_EX);
+
 if (!$saved && !$mailed) {
     reply(500, ['ok' => false]);
 }
-reply(200, ['ok' => true]);
+reply(200, ['ok' => true, 'mailed' => $mailed]);
